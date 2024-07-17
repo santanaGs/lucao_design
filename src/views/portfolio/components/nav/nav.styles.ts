@@ -5,15 +5,27 @@ import { NavProps } from "./nav";
 export const DivS = styled.div`
   background-color: ${props => props.theme.black};
   width: 100%;
-  height: 7rem;
+  height: 9rem;
   margin: 0 auto;
   position: fixed; 
   top: 0; 
   left: 0; 
   z-index: 1000; 
   padding-bottom: 1rem;
-  border-bottom: 3px solid ${props => props.theme.white};
+  padding-top: 2rem;
+  border-bottom: 2px solid ${props => props.theme.white};
+  box-shadow: 0 0 5px ${props => props.theme.white}, 
+              0 0 10px ${props => props.theme.white}, 
+              0 0 15px ${props => props.theme.white};
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 10px ${props => props.theme.white}, 
+                0 0 15px ${props => props.theme.white}, 
+                0 0 20px ${props => props.theme.white};
+  }
 `
+
 
 export const NavS = styled.nav`
 	background-color: ${props => props.theme.black};

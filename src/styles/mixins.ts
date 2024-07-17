@@ -9,6 +9,29 @@ export const mixins = {
       color: ${(props) => props.theme.white};
       text-transform: uppercase;
     `,
+    titleG: css`
+        font-size: 70px;
+        /* line-height: 160%; */
+        font-weight: bold;
+        color: ${(props) => props.theme.white};
+        text-transform: uppercase;
+      `,
+    title: css`
+        font-size: 40px;
+        font-weight: bold;
+        color: ${(props) => props.theme.white};
+        text-shadow: 
+        0 0 3px ${(props) => props.theme.white},
+        0 0 1px ${(props) => props.theme.white},
+        0 0 5px ${(props) => props.theme.white}, 
+        0 0 7px ${(props) => props.theme.white}; 
+  `,
+    descriptionInfo: css`
+          font-size: 30px;
+          /* line-height: 160%; */
+          font-weight: 400;
+          color: ${(props) => props.theme.white};
+        `,
     subtitle: css`
         font-size: 40px;
         line-height: 160%;

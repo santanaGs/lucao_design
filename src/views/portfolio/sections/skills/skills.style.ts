@@ -41,3 +41,15 @@ export const SkillItem = styled.li`
 font-size: 30px;
 font-weight: 400;
 `
+
+export const SoftwareContainer = styled.div`
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 1rem;
+`
+
+export const SoftwareDiv = styled.div`
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+`

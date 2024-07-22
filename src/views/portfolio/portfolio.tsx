@@ -1,5 +1,6 @@
 import { Nav } from "./components/nav/nav";
 import { Main } from "./portfolio.styles";
+import { Carrossel } from "./sections/carrossel/carrossel";
 import { Hero } from "./sections/hero/hero";
 import { Skills } from "./sections/skills/skills";
 
@@ -12,6 +13,8 @@ export function Portfolio() {
       <Main>
         <Hero />
         <Skills />
+        <Carrossel title="Ilustrações" icon="lapis" key="1" data="ilustracoes" />
+        <Carrossel title="Social Mídia" icon="celular" key="1" data="socialmedia" />
       </Main>
     </div>
   )

@@ -20,11 +20,6 @@ export const mixins = {
         font-size: 40px;
         font-weight: bold;
         color: ${(props) => props.theme.white};
-        text-shadow: 
-        0 0 3px ${(props) => props.theme.white},
-        0 0 1px ${(props) => props.theme.white},
-        0 0 5px ${(props) => props.theme.white}, 
-        0 0 7px ${(props) => props.theme.white}; 
   `,
     descriptionInfo: css`
           font-size: 30px;

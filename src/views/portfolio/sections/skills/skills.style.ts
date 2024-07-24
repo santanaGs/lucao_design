@@ -28,6 +28,12 @@ margin: 0 auto;
 	box-shadow: 0 2px 5px ${props => props.theme.white}, 
               0 4px 10px ${props => props.theme.white}, 
               0 6px 15px ${props => props.theme.white};
+
+@media (max-width: 768px) {
+  width: 90%;
+	margin-bottom: 2rem;
+ }
+							
 `
 
 

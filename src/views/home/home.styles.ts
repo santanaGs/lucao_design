@@ -17,10 +17,18 @@ export const Background = styled.div`
 
 export const Title = styled.h1`
 ${mixins.fonts.titleLG};
+
+@media (max-width: 768px) {
+    font-size: 3rem;
+  }
 `
 
 export const SubTitle = styled.h1`
 ${mixins.fonts.subtitle};
+
+@media (max-width: 768px) {
+    font-size: 1.2rem;
+  }
 `
 
 export const LinkS = styled(NavLink)`
@@ -48,6 +56,12 @@ export const Praia = styled.img`
 	position: absolute;
 	top: -6%;
 	left: -11.3%;	
+
+	@media (max-width: 768px) {
+    width: 70%;
+		top: -2%;
+		left: -15%;	
+  }
 `
 
 export const Casal = styled.img`
@@ -55,6 +69,12 @@ export const Casal = styled.img`
 	top: 13.8%;
 	left: -10%;	
 	z-index: 2;	
+
+	@media (max-width: 768px) {
+    width: 70%;
+		top: 18.8%;
+		left: -30%;	
+  }
 `
 
 export const Mundo = styled.img`
@@ -62,11 +82,23 @@ export const Mundo = styled.img`
 	top: 55%;
 	left: -8%;
 	z-index: 1;	
+
+	@media (max-width: 768px) {
+    width: 70%;
+		top: 70%;
+		left: -18%;
+  }
 `
 export const Paz = styled.img`
 	position: absolute;
 	top: -9%;
 	right: -11.3%;	
+
+	@media (max-width: 768px) {
+    width: 70%;
+		top: -3%;
+		right: -20.3%;	
+  }
 `
 
 export const Coracao = styled.img`
@@ -74,10 +106,22 @@ export const Coracao = styled.img`
 	top: 27%;
 	right: -14.5%;	
 	z-index: 4;	
+
+	@media (max-width: 768px) {
+    width: 70%;
+		top: 27%;
+		right: -30.5%;	
+  }
 `
 export const Money = styled.img`
 	position: absolute;
 	top: 56%;
 	right: -6.7%;
 	z-index: 5;	
+
+	@media (max-width: 768px) {
+    width: 70%;
+		top: 75%;
+		right: -16.7%;
+  }
 `

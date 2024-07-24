@@ -26,7 +26,7 @@ export const DivS = styled.div`
   }
 
   @media (max-width: 768px) {
-    height: max-content;
+   min-height: 25%;
   }
   
 `

@@ -26,7 +26,8 @@ export const DivS = styled.div`
   }
 
   @media (max-width: 768px) {
-   height: 250px;
+   height: 200px;
+   padding-top: 0;
   }
   
 `

@@ -5,7 +5,6 @@ import img from '../../assets/background.png'
 
 export const Main = styled.main`
 padding-top: 8rem;
-  height: 10000vh;
   background-color: black;  
   /* background-image: url(${img});
   background-repeat: repeat;

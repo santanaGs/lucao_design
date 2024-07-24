@@ -1,4 +1,4 @@
-import { Item, NavS, Title, Image, LinkS, DivS } from "./nav.styles";
+import { Item, NavS, Title, Image, LinkS, DivS, NavIcon, NavContainer } from "./nav.styles";
 
 // image
 import logo from '../../../../assets/logo.svg'
@@ -18,32 +18,38 @@ import videos from '../../../../assets/video.svg';
 import sites from '../../../../assets/sites.svg';
 import curriculo from '../../../../assets/curriculo.svg';
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const menu: NavProps = [
 	{
 		img: me,
-		title: 'Eu'
+		title: 'Eu',
+		url: '#eu'
 	},
 	{
 		img: ilustracoes,
-		title: 'Ilustrações'
+		title: 'Ilustrações',
+		url: '#ilustracoes',
 	},
 	{
 		img: social,
-		title: `Social \n Media`
+		title: `Social \n Media`,
+		url: '#socialmedia',
 	},
 	{
 		img: logos,
-		title: 'Logos'
+		title: 'Logos',
+		url: '#logos',
 	},
-	{
-		img: videos,
-		title: 'Vídeos'
-	},
+	// {
+	// 	img: videos,
+	// 	title: 'Vídeos',
+	// 	url: '#ilustracoes',
+	// },
 	{
 		img: sites,
-		title: 'Sites'
+		title: 'Sites',
+		url: '#sites',
 	},
 	{
 		img: curriculo,
@@ -63,16 +69,18 @@ export function Nav({ active }: NavProps) {
 				<NavLink to={'/'}  >
 					<Image src={logo} alt="Logo" style={{ width: 100, height: 100 }} />
 				</NavLink>
-				{menu.map((item: NavProps) => {
-					return (
-						<LinkS onClick={() => { setActiveItem(item.title) }}>
-							<Item active={activeItem === item.title}>
-								<img src={item.img} alt="icone svg" />
-								<Title>{item.title}</Title>
-							</Item>
-						</LinkS>
-					)
-				})}
+				<NavContainer>
+					{menu.map((item: NavProps) => {
+						return (
+							<LinkS href={item.url} onClick={() => { setActiveItem(item.title) }}>
+								<Item active={activeItem === item.title}>
+									<NavIcon src={item.img} alt="icone svg" />
+									<Title>{item.title}</Title>
+								</Item>
+							</LinkS>
+						)
+					})}
+				</NavContainer>
 			</NavS>
 		</DivS>
 

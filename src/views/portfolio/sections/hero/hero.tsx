@@ -11,7 +11,7 @@ export function Hero() {
 	// Rendering
 	return (
 		<Background>
-			<Container>
+			<Container id="eu">
 				<a href="https://wa.me/5511986200021?text=Vim%20atrav%C3%A9s%20do%20portf%C3%B3lio." target="_blank">
 					<Me src={me} alt="iamgem do design lucas" />
 				</a>

@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { NavProps } from "./nav";
 
@@ -24,18 +24,43 @@ export const DivS = styled.div`
                 0 0 15px ${props => props.theme.white}, 
                 0 0 20px ${props => props.theme.white};
   }
+
+  @media (max-width: 768px) {
+    height: max-content;
+  }
+  
 `
 
 
 export const NavS = styled.nav`
 	background-color: ${props => props.theme.black};
-	width: 100%;
 	height: 6rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
 	max-width: 70%;
 	margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: 100%;
+  }
+`
+
+export const NavContainer = styled.div`
+display: flex;
+width: 85%;
+justify-content: space-between;
+
+
+@media (max-width: 768px) {
+    height: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: .6rem;
+  }
+
 `
 
 export const Item = styled.div<NavProps>`
@@ -72,10 +97,23 @@ export const Item = styled.div<NavProps>`
 
 export const Title = styled.p`
 font-size: 20px;
+
+@media (max-width: 768px) {
+    font-size: 14px;
+  }
+
 `
 
-export const Image = styled.img``
+export const Image = styled.img`
+  
+`
 
-export const LinkS = styled(NavLink)`
+export const LinkS = styled.a`
 	text-decoration: none;
+`
+
+export const NavIcon = styled.img`
+    @media (max-width: 768px) {
+    display: none;
+  }
 `

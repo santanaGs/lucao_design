@@ -9,24 +9,5 @@ export const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme['white']};
 
     font-family: "Montserrat", sans-serif;
-
-
-    ::-webkit-scrollbar {
-  width: 12px; 
-}
-
-::-webkit-scrollbar-track {
-  background: ${props => props.theme.white}; 
-  border-radius: 10px; 
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888; 
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-}
   }
 `
